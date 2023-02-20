@@ -1,0 +1,39 @@
+#%RAML 1.0
+title: CollegeDetails
+baseUri: http://CollegeDetails/api/test
+
+/Students marks:
+  get:
+    description: Thisis to get the student marks
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include Examples/Srini marks.json
+
+
+/Students Class:
+  post:
+    description: create data
+    body:
+         application/json:
+            example: !include Examples/Studentrequest.json
+    responses:
+      201:
+        body:
+          application/json:
+            example: !include Examples/Students response.json
+              
+    
+      
+        
+          
+              
+
+              
+            
+
+              
+
+              
+               
